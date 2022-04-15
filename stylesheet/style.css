@@ -21,7 +21,9 @@ html {
 
 header {
   width: 100%;
-  background-color: rgb(191, 6, 6);
+  background: radial-gradient(circle, rgba(246,248,255,1) 0%, rgba(185,0,0,1) 100%);
+  border-bottom: 3px solid rgba(255, 252, 252, 0.297);
+  
 }
 
 #menu {
@@ -150,8 +152,9 @@ body {
 }
 
 .redes {
-  background: rgb(161, 161, 161);
+  background: radial-gradient(circle, rgba(246,248,255,1) 0%, rgba(185,0,0,1) 100%);
   margin-top: 1px;
+  border-top: 3px solid rgba(255, 252, 252, 0.297);
 }
 
 .iconos {
