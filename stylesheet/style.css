@@ -20,18 +20,16 @@ html {
   text-decoration: none;
 }
 
-header{
+/* header {
   width: 100%;
-  background: radial-gradient(circle, rgba(246,248,255,1) 0%, rgba(185,0,0,1) 100%);
-  border-bottom: 3px solid rgba(255, 252, 252, 0.297);
-  
-}
+  background-color: radial-gradient(circle, rgba(255,0,0,1) 1%, rgba(82,0,0,1) 86%) !important;  
+} */
 
 #menu {
   display: none;
 }
 
-header .menu .cerrar_menu_celular {
+/* header .menu .cerrar_menu_celular {
   position: absolute;
   top: 31rem;
   right: 13rem;
@@ -82,20 +80,22 @@ header .menu {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.686);
 }
+ */
 
 /* CSS DE LOS BOOTSTRAP */
-#sr-logo{
+#sr-logo {
   width: 200px;
   margin-left: 40px;
 }
 
 
-#bonotes_menu{
+#bonotes_menu {
   color: aliceblue;
-  background-color: rgb(237 10 10);
-  border: 2px solid #fff;
-  margin-right: 15px;
-   
+  /* background-color: rgb(237 10 10);
+  border: 2px solid #fff; */
+  /* margin-right: 15px; */
+  font-size: 20px;
+
 }
 
 nav.menu ul li {
@@ -109,7 +109,7 @@ nav.menu ul li {
   margin-right: 15px;
 }
 
-nav.menu ul li:hover {  
+nav.menu ul li:hover {
   background-color: rgba(255, 255, 255, 0.354);
   transform: scale(1.1) translateY(5px);
 }
@@ -121,7 +121,7 @@ nav.menu ul li a {
 footer {
   position: absolute;
   bottom: auto;
-  width: 100%;  
+  width: 100%;
 }
 
 .arreglado {
@@ -129,7 +129,7 @@ footer {
 }
 
 body {
-  background-color: rgb(237 10 10);
+background: radial-gradient(circle, rgb(255 0 0) 1%, rgb(118 0 0 / 98%) 74%);
   color: aliceblue;
   text-align: center;
 }
@@ -138,6 +138,7 @@ body {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -145,35 +146,35 @@ body {
 
 
 #noticias {
-  box-sizing: content-box;  
+  box-sizing: content-box;
   width: 20%;
-  margin-left: auto;   
-  animation: slide-in 0.5s; 
+  margin-left: auto;
+  animation: slide-in 0.5s;
 }
 
 
 
 @keyframes left-in-fade {
-  0%{
-    
+  0% {
+
     opacity: 0;
   }
 
-  50%{
+  50% {
     opacity: 0.8;
   }
 
-  100%{
-    
+  100% {
+
     opacity: 1;
   }
-  
+
 }
- 
+
 #texto-infotmativo {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  margin-top: 3rem;  
+  margin-top: 3rem;
   text-align: center;
   line-height: 1.5;
   color: white;
@@ -183,36 +184,36 @@ body {
 }
 
 .primer_bloque {
-  font-size: 5vw;  
+  font-size: 5vw;
 }
 
 .segundo_bloque {
-  font-size: 3vw;  
+  font-size: 3vw;
 }
 
 .tercer_bloque {
-  font-size: 4vw;  
+  font-size: 4vw;
 }
 
 .contenido {
   display: flex;
-  margin-top: 2rem;  
+  margin-top: 2rem;
 }
 
-.contenedor{
+.contenedor {
   margin-top: 2px;
 }
 
 .redes {
   height: 3rem;
-  background: radial-gradient(circle, rgba(246,248,255,1) 0%, rgba(185,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(246, 248, 255, 1) 0%, rgba(185, 0, 0, 1) 100%);
   margin-top: 1px;
-  border-top: 3px solid rgba(255, 252, 252, 0.297);  
+  border-top: 3px solid rgba(255, 252, 252, 0.297);
 }
 
 .iconos {
   width: 40px;
-  display: inline-block; 
+  display: inline-block;
   height: auto;
 
 }
@@ -327,18 +328,22 @@ h3 {
   .menu_celular {
     display: none;
   }
+
   header .menu {
     display: initial;
     position: inherit;
   }
+
   header .menu .cerrar_menu_celular {
     display: none;
   }
+
   header .menu ul {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  #sr-logo{
+
+  #sr-logo {
     display: none;
     width: 200px;
     margin: auto;
@@ -348,10 +353,10 @@ h3 {
 
 
 @media screen and (max-width: 768px) {
-  #noticias{
+  #noticias {
     display: none;
   }
 
 
-  
+
 }
