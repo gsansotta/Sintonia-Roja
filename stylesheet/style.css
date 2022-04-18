@@ -114,9 +114,9 @@ nav.menu ul li {
   margin-right: 15px;
 }
 
-nav.menu ul li:hover {
+.nav-link:hover {
   background-color: rgba(255, 255, 255, 0.354);
-  transform: scale(1.1) translateY(5px);
+  transform: scale(1.1) translateY(1px);
 }
 
 nav.menu ul li a {
