@@ -16,76 +16,16 @@ html {
   width: 100%;
 }
 
-.menu a {
-  text-decoration: none;
-}
-
 .nav-link{
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
 }
 
-/* header {
-  width: 100%;
-  background-color: radial-gradient(circle, rgba(255,0,0,1) 1%, rgba(82,0,0,1) 86%) !important;  
-} */
 
 #menu {
   display: none;
 }
 
-/* header .menu .cerrar_menu_celular {
-  position: absolute;
-  top: 31rem;
-  right: 13rem;
-  font-size: 1.5rem;
-  color: red;
-}
-
-.menu_celular {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 2rem;
-  background-color: white; 
-  color: grey; 
-  border-radius: 5px;
-  
-}
-
-input#menu:checked ~ .menu {
-  display: block;
-}
-
-header .menu ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  height: 4rem;
-}
-
-header .menu ul li {
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-
-header .menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.686);
-}
- */
 
 /* CSS DE LOS BOOTSTRAP */
 #sr-logo {
@@ -95,24 +35,11 @@ header .menu {
 
 
 #bonotes_menu {
-  color: aliceblue;
-  /* background-color: rgb(237 10 10);
-  border: 2px solid #fff; */
-  /* margin-right: 15px; */
+  color: aliceblue; 
   font-size: 20px;
 
 }
 
-nav.menu ul li {
-  background-color: rgb(237 10 10);
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
-  padding: 7px;
-  border: 2px solid #fff;
-  display: inline-block;
-  border-radius: 3px;
-  margin-right: 15px;
-}
 
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.354);
@@ -211,7 +138,7 @@ background: radial-gradient(circle, rgb(255 0 0) 1%, rgb(118 0 0 / 98%) 74%);
 
 .redes {
   height: 3rem;
-  background: radial-gradient(circle, rgba(246, 248, 255, 1) 0%, rgba(185, 0, 0, 1) 100%);
+  background: radial-gradient(circle, rgba(255,0,0,1) 1%, rgba(82,0,0,1) 86%);
   margin-top: 1px;
   border-top: 3px solid rgba(255, 252, 252, 0.297);
 }
@@ -251,6 +178,10 @@ background: radial-gradient(circle, rgb(255 0 0) 1%, rgb(118 0 0 / 98%) 74%);
 }
 
 /* SECCION EL CLUB */
+
+.carousel-caption{
+background-color: rgba(255, 0, 0, 0.631);
+}
 
 .el_club h1 {
   font-family: Arial, Helvetica, sans-serif;
