@@ -63,7 +63,12 @@ html {
   transition:  transform 0.5s ease-in;
 }
 .iconos:hover{ 
-  transform: scale(1.5) translateY(1px);   
+  transform: scale(1.5) translateY(1px);     
+}
+
+.footer-arreglado{
+  position: absolute;
+  bottom: 0;
 }
 
 
@@ -200,6 +205,19 @@ body {
 background-color: rgba(255, 0, 0, 0.631);
 }
 
+#links-externos{
+  margin-top: 20px;
+}
+
+.container h2{
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container h2:hover {
+  background-color: rgba(255, 255, 255, 0.572);
+  transform: scale(1.1) translateY(1px);
+}
+
 .el_club h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
@@ -319,6 +337,3 @@ h3 {
   max-height: 460px;
 }
 
-/* .carousel-inner{
-height: 200px;
-} */
