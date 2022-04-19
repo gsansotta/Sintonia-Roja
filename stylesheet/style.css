@@ -21,6 +21,12 @@ html {
   padding-left: 1.5rem !important;
 }
 
+.mb-4 a{
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  max-width: 400px;
+}
+
 
 #menu {
   display: none;
@@ -173,10 +179,20 @@ background: radial-gradient(circle, rgb(255 0 0) 1%, rgb(118 0 0 / 98%) 74%);
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-#mapa {
-  margin-top: 25px;
+.img-thumbnail {
+  padding: 0.01rem;
+  background-color: rgba(255, 255, 255, 0.963);
+  border: 1px solid #fafbfb;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
 }
 
+
+#mapa {
+  margin-top: 25px;
+
+}
 /* SECCION EL CLUB */
 
 .carousel-caption{
@@ -296,3 +312,12 @@ h3 {
 
 
 }
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 460px;
+}
+
+/* .carousel-inner{
+height: 200px;
+} */
