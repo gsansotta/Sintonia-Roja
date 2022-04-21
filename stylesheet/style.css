@@ -195,8 +195,8 @@ html {
     background-color: rgba(255, 255, 255, 0.963);
     border: 1px solid #fafbfb;
     border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
   }
 
 
@@ -231,18 +231,7 @@ html {
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
   }
-
-  .el_club .historia {
-    text-align: center;
-    margin-top: 36px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
+  
 
   #link {
     margin-top: 1px;
@@ -276,28 +265,7 @@ html {
   #imaginaria {
     max-width: 10%;
     margin-top: 50px;
-  }
-
-  /* SECCION CONTACTO */
-
-/*   .formulario_general h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-
-  .formulario_general .formulario {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .formulario {
-    height: 20rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  } */
+  } 
 
   .row{       
     justify-content: center;
@@ -320,7 +288,7 @@ html {
   /* RESPONSIVE */
 
   @media screen and (min-width: 992px) {
-    .menu_celular {
+  /*   .menu_celular {
       display: none;
     }
 
@@ -336,7 +304,7 @@ html {
     header .menu ul {
       flex-direction: row;
       justify-content: space-evenly;
-    }
+    } */
 
     #sr-logo {
       display: none;
@@ -344,12 +312,22 @@ html {
       margin: auto;
     }
 
+   
+
   }
 
 
   @media screen and (max-width: 768px) {
     #noticias {
       display: none;
+    }
+
+    #primer_seccion{     
+      flex-direction: column;
+      padding: 0.01rem;
+      justify-content: center;     
+      border-radius: 4rem;      
+      height: auto; 
     }
 
 
