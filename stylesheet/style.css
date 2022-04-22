@@ -287,24 +287,7 @@ html {
 
   /* RESPONSIVE */
 
-  @media screen and (min-width: 992px) {
-  /*   .menu_celular {
-      display: none;
-    }
-
-    header .menu {
-      display: initial;
-      position: inherit;
-    }
-
-    header .menu .cerrar_menu_celular {
-      display: none;
-    }
-
-    header .menu ul {
-      flex-direction: row;
-      justify-content: space-evenly;
-    } */
+  @media screen and (min-width: 992px) { 
 
     #sr-logo {
       display: none;
@@ -317,20 +300,12 @@ html {
   }
 
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     #noticias {
       display: none;
     }
 
-    #primer_seccion{     
-      flex-direction: column;
-      padding: 0.01rem;
-      justify-content: center;     
-      border-radius: 4rem;      
-      height: auto; 
-    }
-
-
+   
 
   }
 
