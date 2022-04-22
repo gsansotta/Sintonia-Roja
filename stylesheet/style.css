@@ -304,6 +304,11 @@ html {
     #noticias {
       display: none;
     } 
+
+    #mapa{
+      width: auto !important;
+      height: auto !important;
+    }
    
   }
 
