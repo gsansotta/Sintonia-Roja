@@ -303,10 +303,8 @@ html {
   @media screen and (max-width: 992px) {
     #noticias {
       display: none;
-    }
-
+    } 
    
-
   }
 
   .carousel-inner img {
