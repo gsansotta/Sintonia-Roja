@@ -210,40 +210,17 @@ html {
   .carousel-caption {
     background-color: rgba(255, 0, 0, 0.631);
   }
-
-  #links-externos {
-    margin-top: 20px;
-  }
-
-  .container h2 {
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-
-  .container h2:hover {
-    background-color: rgba(255, 255, 255, 0.572);
-    transform: scale(1.1) translateY(1px);
-  }
-
-  .el_club h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-top: 16px;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-  
+    
 
   #link {
     margin-top: 1px;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
+    color: aliceblue;    
   }
-
-  #link h3 {
-    font-size: 20px;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+ 
+  .carousel-inner img {
+    width: 100%;
+    max-height: 460px;
   }
 
   /* SECCION PROGRAMA EN VIVO */
@@ -312,7 +289,4 @@ html {
    
   }
 
-  .carousel-inner img {
-    width: 100%;
-    max-height: 460px;
-  }
+  
