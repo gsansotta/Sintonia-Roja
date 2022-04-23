@@ -15,11 +15,7 @@ html {
 
 /* COMIENZO HEADER Y NAVBAR */
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-  #img-header {
+/*   #img-header {
     width: 100%;
   }
 
@@ -41,7 +37,7 @@ html {
   .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.354);
     transform: scale(1.1) translateY(1px);
-  }
+  } */
 
   /* FIN HEADER Y NAVBAR */
 
@@ -142,7 +138,7 @@ html {
   }
 
   .primer_bloque {
-    font-size: 5vw;
+    font-size: 1.3vw;
   }
 
   .segundo_bloque {
@@ -155,19 +151,21 @@ html {
 
   .contenido {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 2rem;    
   }
 
   .contenedor {
     margin-top: 2px;
   }
 
-  .redes {
+/*   .redes {
     height: 3rem;
     background: radial-gradient(circle, rgba(255, 0, 0, 1) 1%, rgba(82, 0, 0, 1) 86%);
     margin-top: 1px;
     border-top: 3px solid rgba(255, 252, 252, 0.297);
-  }
+  } */
+
+  
 
   /* SECCION STAFF */
 
