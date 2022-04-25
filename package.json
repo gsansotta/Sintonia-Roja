@@ -1,0 +1,25 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "Proyecto de la página web de Sintonia Roja",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/styleSASS.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsansotta/Sintonia-Roja.git"
+  },
+  "author": "Gustavo Sansotta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsansotta/Sintonia-Roja/issues"
+  },
+  "homepage": "https://github.com/gsansotta/Sintonia-Roja#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
