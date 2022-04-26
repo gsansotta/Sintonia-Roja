@@ -1,36 +1,39 @@
-/* HEADER */
-header #img-header {
+/* HEADER Y NAVBAR */
+header {
+  #img-header {
     width: 100%;
-}
-
-header .nav-link {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;  
   }
+
+  .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
   #sr-logo {
     width: 200px;
     margin-left: 40px;
   }
+
   #bonotes_menu {
-    color: aliceblue;
-    font-size: 20px; 
-    &:hover{
-        background-color: rgba(255, 255, 255, 0.354);
-        transform: scale(1.1) translateY(1px)
-    }       
-  }
+    color: $fontscolor;
+    font-size: 20px;
 
-
-
-/* NUEVA BARRA INFORMATIVA EN INDEX */
-.informacion {
-    background: linear-gradient(90deg, rgb(5, 1, 1) 15%, rgb(189, 16, 16) 50%, rgb(5, 1, 1) 85%);
-
-    h5 {
-        text-shadow: black 0.1em 0.1em 0.2em;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-align: center;
-        margin-bottom: 0;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.354);
+      transform: scale(1.1) translateY(1px)
     }
+  }
+}
+
+/* NUEVA BARRA INFORMATIVA DEL HEADER EN INDEX */
+.informacion {
+  background: linear-gradient(90deg, rgb(5, 1, 1) 15%, rgb(189, 16, 16) 50%, rgb(5, 1, 1) 85%);
+
+  h5 {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }

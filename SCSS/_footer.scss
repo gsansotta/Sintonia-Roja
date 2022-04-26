@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+
+    .iconos {
+        width: 40px;
+        transition: transform 0.5s ease-in;
+
+        &:hover {
+            transform: scale(1.5) translateY(1px);
+        }
+
+    }
+
+}
+
+.footer-arreglado {
+    position: absolute;
+    bottom: 0;
+}
