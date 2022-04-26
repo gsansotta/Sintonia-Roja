@@ -1,4 +1,13 @@
-/* HEADER */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;1,100&display=swap");
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+/* HEADER Y NAVBAR */
 header #img-header {
   width: 100%; }
 
@@ -6,18 +15,18 @@ header .nav-link {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important; }
 
-#sr-logo {
+header #sr-logo {
   width: 200px;
   margin-left: 40px; }
 
-#bonotes_menu {
+header #bonotes_menu {
   color: aliceblue;
   font-size: 20px; }
-  #bonotes_menu:hover {
+  header #bonotes_menu:hover {
     background-color: rgba(255, 255, 255, 0.354);
     transform: scale(1.1) translateY(1px); }
 
-/* NUEVA BARRA INFORMATIVA EN INDEX */
+/* NUEVA BARRA INFORMATIVA DEL HEADER EN INDEX */
 .informacion {
   background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
   .informacion h5 {
@@ -26,3 +35,47 @@ header .nav-link {
     padding-bottom: 8px;
     text-align: center;
     margin-bottom: 0; }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto; }
+  footer a {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important; }
+  footer .iconos {
+    width: 40px;
+    transition: transform 0.5s ease-in; }
+    footer .iconos:hover {
+      transform: scale(1.5) translateY(1px); }
+
+.footer-arreglado {
+  position: absolute;
+  bottom: 0; }
+
+.staff h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  color: aliceblue;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.staff .nosotros {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  color: aliceblue;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.img-thumbnail {
+  padding: 0.01rem;
+  background-color: rgba(255, 255, 255, 0.963);
+  border: 1px solid #fafbfb;
+  border-radius: 0.25rem; }
+
+#mapa {
+  margin-top: 25px; }
