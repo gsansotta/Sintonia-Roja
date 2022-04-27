@@ -1,0 +1,19 @@
+  #formulario_contacto{
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    
+    .btn{
+      background-color: rgba(252, 12, 12, 0.767);
+      border: none;
+      &:hover{
+        background-color: rgb(113, 107, 107);
+      }
+    }
+  }
+    
+
+
+  
