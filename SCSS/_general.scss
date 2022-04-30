@@ -9,3 +9,128 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+body{
+    background-color: #EF0107;
+    color: aliceblue;
+    text-align: center;
+  }
+
+
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+
+  #noticias {
+    box-sizing: content-box;
+    width: 20%;
+    margin-left: auto;
+    animation: slide-in 0.5s;
+  }
+
+
+
+  @keyframes left-in-fade {
+    0% {
+
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+
+    100% {
+
+      opacity: 1;
+    }
+
+  }
+
+ 
+
+  .primer_bloque {
+    font-size: 1.5vw;
+  }
+
+  .segundo_bloque {
+    font-size: 1.5vw;
+  }
+
+  .tercer_bloque {
+    font-size: 1.5vw;
+  }
+ #escudo_index{
+   max-width: 150px;
+   margin-top: 50px;
+ }
+
+  .contenido {
+    display: flex;
+    margin-top: 2rem;    
+  }
+
+  .contenedor {
+    margin-top: 2px;
+  }
+  
+
+
+ 
+
+  /* RESPONSIVE */
+
+ /*  @media screen and (min-width: 992px) { 
+
+    #sr-logo {
+      display: none;
+      width: 200px;
+      margin: auto;
+    }
+   
+
+  } */
+
+
+  @media screen and (max-width: 992px) {
+    #noticias {
+      display: none;
+    } 
+    #texto-infotmativo{
+      margin-left: 9% !important;
+
+    }
+
+    .primer_bloque {
+      font-size:3vw;
+    }
+  
+    .segundo_bloque {
+      font-size: 3vw;
+    }
+  
+    .tercer_bloque {
+      font-size: 3vw;
+    }
+   
+
+    #mapa{
+      width: auto !important;
+      height: auto !important;
+    }
+
+    
+   
+  }
+
+
+
+
