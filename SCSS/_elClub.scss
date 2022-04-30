@@ -1,0 +1,26 @@
+.el_club {
+
+    #fondo_texto_carousel {
+        background-color: rgba(255, 0, 0, 0.631);
+    }
+
+    #contenedores_links {
+        margin-bottom: 20px;
+        margin-right: 0;
+
+        #link {
+            margin-top: 1px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+
+    .carousel-inner {
+
+        img {
+            width: 100%;
+            max-height: 460px;
+        }
+    }
+
+}

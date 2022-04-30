@@ -1,0 +1,23 @@
+#texto-infotmativo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    animation-name: left-in-fade;
+    animation-duration: 2s;
+    margin-left: 15%;
+}
+
+@media screen and (min-width: 992px) { 
+
+    #sr-logo {
+      display: none;
+      width: 200px;
+      margin: auto;
+    }
+   
+
+  }
