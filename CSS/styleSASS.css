@@ -12,17 +12,12 @@ body {
   color: aliceblue;
   text-align: center; }
 
+/* ANIMACIONES */
 @keyframes slide-in {
   from {
     transform: translateX(-100%); }
   to {
     transform: translateX(0%); } }
-
-#noticias {
-  box-sizing: content-box;
-  width: 20%;
-  margin-left: auto;
-  animation: slide-in 0.5s; }
 
 @keyframes left-in-fade {
   0% {
@@ -32,51 +27,8 @@ body {
   100% {
     opacity: 1; } }
 
-.primer_bloque {
-  font-size: 1.5vw; }
-
-.segundo_bloque {
-  font-size: 1.5vw; }
-
-.tercer_bloque {
-  font-size: 1.5vw; }
-
-#escudo_index {
-  max-width: 150px;
-  margin-top: 50px; }
-
-.contenido {
-  display: flex;
-  margin-top: 2rem; }
-
 .contenedor {
   margin-top: 2px; }
-
-/* RESPONSIVE */
-/*  @media screen and (min-width: 992px) { 
-
-    #sr-logo {
-      display: none;
-      width: 200px;
-      margin: auto;
-    }
-   
-
-  } */
-@media screen and (max-width: 992px) {
-  #noticias {
-    display: none; }
-  #texto-infotmativo {
-    margin-left: 9% !important; }
-  .primer_bloque {
-    font-size: 3vw; }
-  .segundo_bloque {
-    font-size: 3vw; }
-  .tercer_bloque {
-    font-size: 3vw; }
-  #mapa {
-    width: auto !important;
-    height: auto !important; } }
 
 /* HEADER Y NAVBAR */
 header #img-header {
@@ -149,8 +101,16 @@ footer {
   border: 1px solid #fafbfb;
   border-radius: 0.25rem; }
 
+/* APLICO MIXIN */
 #mapa {
+  height: 300px;
+  width: 800px;
   margin-top: 25px; }
+
+@media screen and (max-width: 992px) {
+  #mapa {
+    height: auto !important;
+    width: auto !important; } }
 
 #formulario_contacto {
   justify-content: center;
@@ -184,7 +144,8 @@ footer {
 
 .el_club #contenedores_links {
   margin-bottom: 20px;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-left: 0; }
   .el_club #contenedores_links #link {
     margin-top: 1px;
     text-decoration: none;
@@ -194,20 +155,41 @@ footer {
   width: 100%;
   max-height: 460px; }
 
-#texto-infotmativo {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-top: 3rem;
-  text-align: center;
-  line-height: 1.5;
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  animation-name: left-in-fade;
-  animation-duration: 2s;
-  margin-left: 15%; }
+.main_index .contenido {
+  display: flex;
+  margin-top: 2rem; }
+  .main_index .contenido #texto-infotmativo {
+    margin-left: 15%;
+    /* COMIENZO A APLICAR EXTEND */ }
+    .main_index .contenido #texto-infotmativo .primer_bloque, .main_index .contenido #texto-infotmativo .segundo_bloque, .main_index .contenido #texto-infotmativo .tercer_bloque {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      margin-top: 3rem;
+      text-align: center;
+      line-height: 1.5;
+      font-size: 1.5vw;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      animation-name: left-in-fade;
+      animation-duration: 2s; }
+    .main_index .contenido #texto-infotmativo .segundo_bloque {
+      font-size: 1.3vw; }
+    .main_index .contenido #texto-infotmativo .tercer_bloque {
+      font-size: 1.4vw; }
+    .main_index .contenido #texto-infotmativo #escudo_index {
+      max-width: 150px;
+      margin-top: 50px; }
+  .main_index .contenido #noticias {
+    box-sizing: content-box;
+    width: 20%;
+    margin-left: auto;
+    animation: slide-in 0.5s; }
 
 @media screen and (min-width: 992px) {
   #sr-logo {
     display: none;
     width: 200px;
     margin: auto; } }
+
+@media screen and (max-width: 992px) {
+  #noticias {
+    display: none; } }
