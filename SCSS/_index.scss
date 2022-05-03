@@ -1,5 +1,5 @@
 .main_index {
-  
+
   .contenido {
     display: flex;
     margin-top: 2rem;
@@ -23,12 +23,12 @@
 
       .segundo_bloque {
         @extend .primer_bloque;
-        font-size: 1.3vw
+        font-size: 1.3vw;
       }
 
       .tercer_bloque {
         @extend .primer_bloque;
-        font-size: 1.4vw
+        font-size: 1.4vw;
       }
 
       #escudo_index{
