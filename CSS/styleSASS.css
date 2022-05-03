@@ -31,34 +31,31 @@ body {
   margin-top: 2px; }
 
 /* HEADER Y NAVBAR */
-header #img-header {
-  width: 100%; }
-
-header .nav-link {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important; }
-
-header #sr-logo {
-  width: 200px;
-  margin-left: 40px; }
-
-header #bonotes_menu {
-  color: aliceblue;
-  font-size: 20px; }
-  header #bonotes_menu:hover {
-    background-color: rgba(255, 255, 255, 0.354);
-    transform: scale(1.1) translateY(1px); }
-
-/* NUEVA BARRA INFORMATIVA DEL HEADER EN INDEX */
-.informacion {
-  background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
-  .informacion p {
-    text-shadow: black 0.1em 0.1em 0.2em;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 2vh; }
+header {
+  /* COMIENZO DE BARRA INFORMATIVA DEL HEADER EN INDEX */
+  /*FIN DE BARRA INFORMATIVA DEL HEADER EN INDEX */ }
+  header #img-header {
+    width: 100%; }
+  header #sr-logo {
+    width: 200px;
+    margin-left: 40px; }
+  header .informacion {
+    background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
+    header .informacion h1 {
+      text-shadow: black 0.1em 0.1em 0.2em;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 2vh; }
+  header #bonotes_menu {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    color: aliceblue;
+    font-size: 20px; }
+    header #bonotes_menu:hover {
+      background-color: rgba(255, 255, 255, 0.354);
+      transform: scale(1.1) translateY(1px); }
 
 footer {
   display: flex;
