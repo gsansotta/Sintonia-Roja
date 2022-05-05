@@ -8,7 +8,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #EF0107; }
+  background-color: #EF0107;
+  color: aliceblue;
+  text-align: center; }
 
 /* ANIMACIONES */
 @keyframes slide-in {
@@ -43,10 +45,8 @@ header {
       text-shadow: black 0.1em 0.1em 0.2em;
       padding-top: 8px;
       padding-bottom: 8px;
-      text-align: center;
       margin-bottom: 0;
-      font-size: 2vh;
-      color: aliceblue; }
+      font-size: 2vh; }
   header #bonotes_menu {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
@@ -60,8 +60,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
   footer a {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important; }
@@ -80,17 +79,14 @@ footer {
   .staff h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
-    color: aliceblue;
     text-shadow: black 0.1em 0.1em 0.2em; }
   .staff .nosotros {
-    text-align: center;
     margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
-    color: aliceblue;
     text-shadow: black 0.1em 0.1em 0.2em; }
   .staff .container {
     color: aliceblue;
@@ -114,8 +110,6 @@ footer {
     width: auto !important; } }
 
 #formulario_contacto {
-  color: aliceblue;
-  text-align: center;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -128,29 +122,31 @@ footer {
       background-color: #716b6b; }
 
 /* APLICO MAPS */
-.vivo {
-  text-align: center; }
-  .vivo h2 {
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+.vivo h2 {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vh;
+  line-height: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.vivo .reproductor {
+  margin-top: 60px; }
+
+.vivo .vivo_video a {
+  text-decoration: none; }
+  .vivo .vivo_video a p {
     font-size: 2.5vh;
-    line-height: 40px;
-    color: aliceblue;
-    text-shadow: black 0.1em 0.1em 0.2em; }
-  .vivo .reproductor {
-    margin-top: 60px; }
-  .vivo .vivo_video a {
+    text-shadow: black 0.1em 0.1em 0.2em;
     text-decoration: none; }
-    .vivo .vivo_video a p {
-      font-size: 2.5vh;
-      text-shadow: black 0.1em 0.1em 0.2em;
-      text-decoration: none; }
-  .vivo .vivo_twitch {
-    color: #6441A5; }
-  .vivo .vivo_web {
-    color: #2956a3; }
-  .vivo #imaginaria {
-    max-width: 200px; }
+
+.vivo .vivo_twitch {
+  color: #6441A5; }
+
+.vivo .vivo_web {
+  color: #2956a3; }
+
+.vivo #imaginaria {
+  max-width: 200px; }
 
 .el_club #fondo_texto_carousel {
   background-color: rgba(255, 0, 0, 0.631); }
@@ -177,7 +173,6 @@ footer {
   margin-top: 2rem; }
   .main_index .contenido #texto-infotmativo {
     margin-left: 15%;
-    text-align: center;
     /* COMIENZO A APLICAR EXTEND */ }
     .main_index .contenido #texto-infotmativo .primer_bloque, .main_index .contenido #texto-infotmativo .segundo_bloque, .main_index .contenido #texto-infotmativo .tercer_bloque {
       color: aliceblue;
@@ -210,4 +205,6 @@ footer {
 
 @media screen and (max-width: 992px) {
   #noticias {
-    display: none; } }
+    display: none; }
+  #texto-infotmativo {
+    margin-left: 30% !important; } }
