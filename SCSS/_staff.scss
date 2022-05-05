@@ -4,6 +4,8 @@
 }
 
 .staff {
+  text-align: center;
+
   h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
@@ -21,6 +23,11 @@
     line-height: 25px;
     color: $fontscolor;
     text-shadow: $shadow;
+  }
+
+  .container {   
+      color: aliceblue;
+      text-shadow: $shadow;    
   }
 }
 
@@ -40,7 +47,7 @@
 @media screen and (max-width: 992px) {
 
   #mapa {
-    @include boxSizes(auto !important, auto !important);    
+    @include boxSizes(auto !important, auto !important);
   }
 
 }
