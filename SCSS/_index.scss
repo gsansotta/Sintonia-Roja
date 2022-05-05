@@ -6,17 +6,18 @@
 
     #texto-infotmativo {
       margin-left: 15%;
+      text-align: center;
 
       /* COMIENZO A APLICAR EXTEND */
 
       .primer_bloque {
+        color: $fontscolor;
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
-        margin-top: 3rem;
-        text-align: center;
+        margin-top: 3rem;        
         line-height: 1.5;
         font-size: 1.5vw;
-        text-shadow: black 0.1em 0.1em 0.2em;
+        text-shadow: $shadow;
         animation-name: left-in-fade;
         animation-duration: 2s;
       }
