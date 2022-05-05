@@ -60,7 +60,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   footer a {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important; }
@@ -74,22 +75,26 @@ footer {
   position: absolute;
   bottom: 0; }
 
-.staff h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  color: aliceblue;
-  text-shadow: black 0.1em 0.1em 0.2em; }
-
-.staff .nosotros {
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 25px;
-  color: aliceblue;
-  text-shadow: black 0.1em 0.1em 0.2em; }
+.staff {
+  text-align: center; }
+  .staff h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .staff .nosotros {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .staff .container {
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em 0.2em; }
 
 .img-thumbnail {
   padding: 0.01rem;
@@ -109,6 +114,8 @@ footer {
     width: auto !important; } }
 
 #formulario_contacto {
+  color: aliceblue;
+  text-align: center;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -156,6 +163,10 @@ footer {
     margin-top: 1px;
     text-decoration: none;
     color: aliceblue; }
+    .el_club #contenedores_links #link h4 {
+      text-align: center; }
+    .el_club #contenedores_links #link p {
+      text-align: center; }
 
 .el_club .carousel-inner img {
   width: 100%;
