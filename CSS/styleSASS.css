@@ -32,6 +32,7 @@ body {
 
 /* HEADER Y NAVBAR */
 header {
+  background: linear-gradient(90deg, #a80000 0%, #fd201d 50%, #a80000 100%);
   /* COMIENZO DE BARRA INFORMATIVA DEL HEADER EN INDEX */
   /*FIN DE BARRA INFORMATIVA DEL HEADER EN INDEX */ }
   header #img-header {
@@ -57,6 +58,7 @@ header {
       transform: scale(1.1) translateY(1px); }
 
 footer {
+  background: linear-gradient(90deg, #ababab 15%, #fff3f3 50%, #ababab 85%);
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -159,14 +161,16 @@ footer {
   margin-bottom: 20px;
   margin-right: 0;
   margin-left: 0; }
-  .el_club #contenedores_links #link {
-    margin-top: 1px;
-    text-decoration: none;
-    color: aliceblue; }
-    .el_club #contenedores_links #link h4 {
-      text-align: center; }
-    .el_club #contenedores_links #link p {
-      text-align: center; }
+  .el_club #contenedores_links .card {
+    background: rgba(189, 185, 185, 0.428); }
+    .el_club #contenedores_links .card #link {
+      margin-top: 1px;
+      text-decoration: none;
+      color: aliceblue; }
+      .el_club #contenedores_links .card #link h4 {
+        text-align: center; }
+      .el_club #contenedores_links .card #link p {
+        text-align: center; }
 
 .el_club .carousel-inner img {
   width: 100%;
@@ -200,6 +204,11 @@ footer {
     width: 20%;
     margin-left: auto;
     animation: slide-in 0.5s; }
+
+.main_index .row {
+  background: rgba(166, 0, 0, 0.428); }
+  .main_index .row .card {
+    background: rgba(166, 0, 0, 0.428); }
 
 @media screen and (min-width: 992px) {
   #sr-logo {

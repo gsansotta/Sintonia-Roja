@@ -8,15 +8,20 @@
         margin-right: 0;
         margin-left: 0;
 
-        #link {
-            margin-top: 1px;
-            text-decoration: none;
-            color: $fontscolor;
-            h4{
-                text-align: center;
-            }
-            p{
-                text-align: center  
+        .card {
+            background: rgba(189, 185, 185, 0.428);
+            #link {
+                margin-top: 1px;
+                text-decoration: none;
+                color: $fontscolor;
+
+                h4 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center
+                }
             }
         }
     }
