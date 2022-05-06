@@ -41,7 +41,7 @@ header {
     margin-left: 40px; }
   header .informacion {
     background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
-    header .informacion h1 {
+    header .informacion h1, header .informacion .vivo h2, .vivo header .informacion h2 {
       text-shadow: black 0.1em 0.1em 0.2em;
       padding-top: 8px;
       padding-bottom: 8px;
@@ -76,7 +76,7 @@ footer {
 
 .staff {
   text-align: center; }
-  .staff h1 {
+  .staff h1, .staff .vivo h2, .vivo .staff h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     text-shadow: black 0.1em 0.1em 0.2em; }
@@ -122,7 +122,7 @@ footer {
       background-color: #716b6b; }
 
 /* APLICO MAPS */
-.vivo h2 {
+.vivo h1, .vivo h2 {
   margin-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5vh;
@@ -132,20 +132,24 @@ footer {
 .vivo .reproductor {
   margin-top: 60px; }
 
-.vivo .vivo_video a {
+.vivo .vivo_video .btn {
+  background-color: rgba(217, 213, 213, 0.64);
+  border-radius: 2rem;
+  border-style: none;
   text-decoration: none; }
-  .vivo .vivo_video a p {
+  .vivo .vivo_video .btn:hover {
+    background-color: #716b6b; }
+  .vivo .vivo_video .btn .vivo_twitch {
+    color: #6441A5; }
+  .vivo .vivo_video .btn .vivo_web {
+    color: #2956a3; }
+  .vivo .vivo_video .btn p {
+    margin-top: 15px;
     font-size: 2.5vh;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    text-decoration: none; }
-
-.vivo .vivo_twitch {
-  color: #6441A5; }
-
-.vivo .vivo_web {
-  color: #2956a3; }
+    font-style: bold; }
 
 .vivo #imaginaria {
+  margin-top: 15px;
   max-width: 200px; }
 
 .el_club #fondo_texto_carousel {
