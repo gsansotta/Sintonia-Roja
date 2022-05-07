@@ -73,15 +73,14 @@ footer {
       transform: scale(1.5) translateY(1px); }
 
 .staff {
-  text-align: center; }
+  text-align: center;
+  /* APLICO MIXIN */ }
   .staff h1, .staff .vivo h2, .vivo .staff h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     text-shadow: black 0.1em 0.1em 0.2em; }
-  .staff .nosotros {
+  .staff #descripcion {
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
@@ -89,23 +88,23 @@ footer {
   .staff .container {
     color: aliceblue;
     text-shadow: black 0.1em 0.1em 0.2em; }
-
-.img-thumbnail {
-  padding: 0.01rem;
-  background-color: rgba(255, 255, 255, 0.963);
-  border: 1px solid #fafbfb;
-  border-radius: 0.25rem; }
-
-/* APLICO MIXIN */
-#mapa {
-  height: 300px;
-  width: 800px;
-  margin-top: 25px; }
-
-@media screen and (max-width: 992px) {
-  #mapa {
-    height: auto !important;
-    width: auto !important; } }
+  .staff .img-thumbnail {
+    padding: 0.01rem;
+    background-color: rgba(255, 255, 255, 0.963);
+    border: 1px solid #fafbfb;
+    border-radius: 0.25rem; }
+  .staff #mapa {
+    height: 300px;
+    width: 800px;
+    margin-top: 25px; }
+  @media screen and (max-width: 992px) {
+    .staff #mapa {
+      height: auto !important;
+      width: auto !important; } }
+  @media screen and (min-width: 992px) {
+    .staff {
+      margin-left: 200px;
+      margin-right: 200px; } }
 
 #formulario_contacto {
   justify-content: center;
