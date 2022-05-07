@@ -74,7 +74,7 @@
             Y SIEMPRE CON EL ESCUDO POR DELANTE <br>
           </span>
           <span>
-            <img src="images/escudo.png" alt="" id="escudo_index">
+            <img src="images/escudo_index.png" alt="escudo-error" id="escudo_index">
           </span>
         </p>
 
@@ -85,36 +85,53 @@
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="noti"></script>
         </div>
         <!-- FIN DE TWITTER -->
-
       </div>      
     </section>
     <!-- FIN DEL TEXTO INFORMATIVO E INFO TWITTER -->
    
-    <!-- COMIENZO DEL CAJON NOTICIAS EN IMAGENES -->
-    <div class="row justify-content-center">
-      <H1>NOTICIAS</H1>
-      <div class="col-xs-9 col-sm-9 col-md-3 col-lg-3">
-        <div class="card">
-          <img src="./images/FRDx2ctXIAAH7f6.png" alt="...">
+    <!-- COMIENZO DE CARROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <h2 class="titulo_carousel">NOTICIAS</h2>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/noticias1.jpg" class="d-block w-100" alt="noticia1-error">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/noticias2.jpg" class="d-block w-100" alt="noticia2-error">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/noticias3.jpg" class="d-block w-100" alt="noticia3-error">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/noticias4.jpg" class="d-block w-100" alt="noticia4-error">
+          <div class="carousel-caption d-none d-md-block"> </div>
         </div>
       </div>
-      <div class="mt-0 col-xs-9 col-sm-9 col-md-3 col-lg-3">
-        <div class="card">
-          <img src="./images/inferiores.png" alt="...">
-        </div>
-      </div>
-      <div class="col-xs-9 col-sm-9 col-md-3 col-lg-3">
-        <div class="card">
-          <img src="./images/concentrados.png" alt="...">
-        </div>
-      </div>
-      <div class="col-xs-9 col-sm-9 col-md-3 col-lg-3">
-        <div class="card">
-          <img src="./images/proximo.png" alt="...">
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- FIN DEL CAJON NOTICIAS EN IMAGENES -->
+    <!-- FIN DE CAROUSEL -->
 
   </main>
 
@@ -122,10 +139,10 @@
   <footer class="bg-dark text-center">
     <div class="container p-4 pb-0">
       <section class="mb-4">
-        <a href="https://www.facebook.com/sintoniaroja/"><img src="images/clipart193685.png" alt="logo0"
+        <a href="https://www.facebook.com/sintoniaroja/"><img src="images/facebook.png" alt="fb-error"
             class="iconos"></a>
-        <a href="https://twitter.com/SintoniaRojaOK"><img src="images/clipart607252.png" alt="" class="iconos"></a>
-        <a href="https://www.instagram.com/sintoniaroja/"><img src="images/clipart2569207.png" alt="logo1"
+        <a href="https://twitter.com/SintoniaRojaOK"><img src="images/twitter.png" alt="tw-error" class="iconos"></a>
+        <a href="https://www.instagram.com/sintoniaroja/"><img src="images/instagram.png" alt="insta-error"
             class="iconos"></a>
       </section>
     </div>

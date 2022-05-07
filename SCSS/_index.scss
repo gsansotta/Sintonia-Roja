@@ -5,7 +5,7 @@
     margin-top: 2rem;
 
     #texto-infotmativo {
-      margin-left: 15%;      
+      margin-left: 15%;
 
       /* COMIENZO A APLICAR EXTEND */
 
@@ -15,7 +15,7 @@
         font-weight: bold;
         margin-top: 3rem;
         line-height: 1.5;
-        font-size: 1.5vw;
+        font-size: 2vw;
         text-shadow: $shadow;
         animation-name: left-in-fade;
         animation-duration: 2s;
@@ -23,12 +23,12 @@
 
       .segundo_bloque {
         @extend .primer_bloque;
-        font-size: 1.3vw;
+        font-size: 1.6vw;
       }
 
       .tercer_bloque {
         @extend .primer_bloque;
-        font-size: 1.4vw;
+        font-size: 1.8vw;
       }
 
       #escudo_index {
@@ -44,12 +44,23 @@
       animation: slide-in 0.5s;
     }
   }
-  .row{
-    background: rgba(166, 0, 0, 0.428);
-  .card{
-    background: rgba(166, 0, 0, 0.428);
-  }
+
+  .carousel {
+    background: rgba(0, 0, 0, 0.583);
+
+    .titulo_carousel {
+      text-align: left;
+      margin-left: 15px;
+      text-shadow: $shadow;
+
+    }
+
+    .carousel-inner {
+      img {
+        height: 600px;
       }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -59,14 +70,19 @@
     margin: auto;
   }
 }
- 
+
 
 @media screen and (max-width: 992px) {
   #noticias {
     display: none;
   }
+
   #texto-infotmativo {
-    margin-left: 30% !important;
+    margin-left: 10% !important;
+
+    .primer_bloque {
+      font-size: 3vw !important;
+    }
   }
 
 }

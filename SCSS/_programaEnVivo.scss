@@ -18,17 +18,23 @@ $vivo: (
   h2 {
     @extend h1;
   }
-
+  
   .reproductor {
     margin-top: 60px;
   }
-
+  
+  #imaginaria {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
   .vivo_video {
     .btn {
       background-color: rgba(217, 213, 213, 0.64);
       border-radius: 2rem;
       border-style: none;
       text-decoration: none;
+      margin-bottom: 15px;
 
       &:hover {
         background-color: rgb(113, 107, 107);
@@ -51,8 +57,4 @@ $vivo: (
 
   }
 
-  #imaginaria {
-    margin-top: 15px;
-    max-width: 200px;
-  }
 }
