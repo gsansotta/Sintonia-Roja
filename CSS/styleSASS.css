@@ -219,9 +219,13 @@ footer {
     margin: auto; } }
 
 @media screen and (max-width: 992px) {
+  .informacion h1, .informacion .vivo h2, .vivo .informacion h2 {
+    font-size: 2.5vw !important; }
   #noticias {
     display: none; }
   #texto-infotmativo {
     margin-left: 10% !important; }
     #texto-infotmativo .primer_bloque, .main_index .contenido #texto-infotmativo .segundo_bloque, .main_index .contenido #texto-infotmativo .tercer_bloque {
-      font-size: 3vw !important; } }
+      font-size: 3vw !important; }
+  .carousel-inner img {
+    height: 320px !important; } }
