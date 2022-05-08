@@ -12,6 +12,10 @@ body {
   color: aliceblue;
   text-align: center; }
 
+/* OCULTO PUBLICIDAD DE 000WEBHOST */
+.disclaimer {
+  display: none; }
+
 /* ANIMACIONES */
 @keyframes slide-in {
   from {
@@ -159,9 +163,14 @@ footer {
   background-color: rgba(255, 0, 0, 0.631); }
 
 .el_club #contenedores_links {
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   margin-right: 0;
   margin-left: 0; }
+  @media screen and (min-width: 992px) {
+    .el_club #contenedores_links {
+      padding-left: 80px;
+      padding-right: 80px; } }
   .el_club #contenedores_links .card {
     background: rgba(189, 185, 185, 0.428); }
     .el_club #contenedores_links .card #link {
