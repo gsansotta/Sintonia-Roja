@@ -7,32 +7,41 @@ $vivo: (
 
 .vivo {
 
-  h1 {
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vh;
-    line-height: 40px;
-    text-shadow: $shadow;
+  .audio_vivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    h1 {
+      margin-top: 30px;
+      font-family: Arial, Helvetica, sans-serif;     
+      line-height: 40px;
+      text-shadow: $shadow;
+    }
+
+    h2 {
+      @extend h1;
+    }
+
+    audio {
+      margin-top: 20px;
+      min-width: 350px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 90px;
+    }
+
+    #imaginaria {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      max-width: 200px;
+    }
   }
 
-  h2 {
-    @extend h1;
-  }
-  
-  .reproductor {
-    margin-top: 60px;
-  }
-  
-  #imaginaria {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    max-width: 200px;
-  }
   .vivo_video {
-    .btn {
-      background-color: rgba(217, 213, 213, 0.64);
-      border-radius: 2rem;
-      border-style: none;
+    text-decoration: none;
+    button {
+      background: $fontscolor;
+      border-radius: 2rem;     
       text-decoration: none;
       margin-bottom: 15px;
 
@@ -44,17 +53,16 @@ $vivo: (
       $color in $vivo {
         .vivo_#{$red} {
           color: $color;
-
         }
       }
 
       p {
         margin-top: 15px;
         font-size: 2.5vh;
-        font-style: bold;
+        font-style: bold; 
+        text-decoration: none;      
       }
     }
-
   }
 
 }

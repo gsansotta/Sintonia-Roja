@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #EF0107;
+  background: #e60023;
   color: aliceblue;
   text-align: center; }
 
@@ -46,7 +46,7 @@ header {
     margin-left: 40px; }
   header .informacion {
     background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
-    header .informacion h1, header .informacion .vivo h2, .vivo header .informacion h2 {
+    header .informacion h1, header .informacion .vivo .audio_vivo h2, .vivo .audio_vivo header .informacion h2 {
       text-shadow: black 0.1em 0.1em 0.2em;
       padding-top: 8px;
       padding-bottom: 8px;
@@ -60,6 +60,9 @@ header {
     header #bonotes_menu:hover {
       background-color: rgba(255, 255, 255, 0.354);
       transform: scale(1.1) translateY(1px); }
+  @media screen and (min-width: 992px) {
+    header #sr-logo {
+      display: none; } }
 
 footer {
   background: linear-gradient(90deg, #ababab 15%, #fff3f3 50%, #ababab 85%);
@@ -78,13 +81,16 @@ footer {
 
 .staff {
   text-align: center;
-  /* APLICO MIXIN */ }
-  .staff h1, .staff .vivo h2, .vivo .staff h2 {
+  /* APLICO MIXIN */
+  /* MEDIA QUERIES */ }
+  .staff h1, .staff .vivo .audio_vivo h2, .vivo .audio_vivo .staff h2 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bold;
     text-shadow: black 0.1em 0.1em 0.2em; }
   .staff #descripcion {
     margin-top: 20px;
+    font-size: 2vh;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
@@ -99,16 +105,12 @@ footer {
     border-radius: 0.25rem; }
   .staff #mapa {
     height: 300px;
-    width: 800px;
+    width: 400px;
     margin-top: 25px; }
   @media screen and (max-width: 992px) {
     .staff #mapa {
       height: auto !important;
       width: auto !important; } }
-  @media screen and (min-width: 992px) {
-    .staff {
-      margin-left: 200px;
-      margin-right: 200px; } }
 
 #formulario_contacto {
   justify-content: center;
@@ -123,37 +125,43 @@ footer {
       background-color: #716b6b; }
 
 /* APLICO MAPS */
-.vivo h1, .vivo h2 {
-  margin-top: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5vh;
-  line-height: 40px;
-  text-shadow: black 0.1em 0.1em 0.2em; }
+.vivo .audio_vivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .vivo .audio_vivo h1, .vivo .audio_vivo h2 {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .vivo .audio_vivo audio {
+    margin-top: 20px;
+    min-width: 350px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 90px; }
+  .vivo .audio_vivo #imaginaria {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 200px; }
 
-.vivo .reproductor {
-  margin-top: 60px; }
-
-.vivo #imaginaria {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  max-width: 200px; }
-
-.vivo .vivo_video .btn {
-  background-color: rgba(217, 213, 213, 0.64);
-  border-radius: 2rem;
-  border-style: none;
-  text-decoration: none;
-  margin-bottom: 15px; }
-  .vivo .vivo_video .btn:hover {
-    background-color: #716b6b; }
-  .vivo .vivo_video .btn .vivo_twitch {
-    color: #6441A5; }
-  .vivo .vivo_video .btn .vivo_web {
-    color: #2956a3; }
-  .vivo .vivo_video .btn p {
-    margin-top: 15px;
-    font-size: 2.5vh;
-    font-style: bold; }
+.vivo .vivo_video {
+  text-decoration: none; }
+  .vivo .vivo_video button {
+    background: aliceblue;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin-bottom: 15px; }
+    .vivo .vivo_video button:hover {
+      background-color: #716b6b; }
+    .vivo .vivo_video button .vivo_twitch {
+      color: #6441A5; }
+    .vivo .vivo_video button .vivo_web {
+      color: #2956a3; }
+    .vivo .vivo_video button p {
+      margin-top: 15px;
+      font-size: 2.5vh;
+      font-style: bold;
+      text-decoration: none; }
 
 .el_club .carousel-inner img {
   width: 100%;
@@ -162,8 +170,15 @@ footer {
 .el_club .carousel-inner #fondo_texto_carousel {
   background-color: rgba(255, 0, 0, 0.631); }
 
+.el_club .parrafo_informativo {
+  background: #CC0000;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 30px;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
 .el_club #contenedores_links {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 60px;
   margin-right: 0;
   margin-left: 0; }
@@ -205,35 +220,36 @@ footer {
     .main_index .contenido #texto-infotmativo #escudo_index {
       max-width: 150px;
       margin-top: 50px; }
-  .main_index .contenido #noticias {
-    box-sizing: content-box;
+  .main_index .contenido #noticias_twitter {
     width: 20%;
     margin-left: auto;
     animation: slide-in 0.5s; }
 
-.main_index .carousel {
+.main_index .noticias_instagram {
   background: rgba(0, 0, 0, 0.583); }
-  .main_index .carousel .titulo_carousel {
+  .main_index .noticias_instagram .titulo_carousel {
     text-align: left;
     margin-left: 15px;
     text-shadow: black 0.1em 0.1em 0.2em; }
-  .main_index .carousel .carousel-inner img {
-    height: 600px; }
 
 @media screen and (min-width: 992px) {
-  #sr-logo {
-    display: none;
-    width: 200px;
-    margin: auto; } }
+  .main_index .carousel {
+    display: none; } }
 
 @media screen and (max-width: 992px) {
-  .informacion h1, .informacion .vivo h2, .vivo .informacion h2 {
+  .main_index .informacion h1, .main_index .informacion .vivo .audio_vivo h2, .vivo .audio_vivo .main_index .informacion h2 {
     font-size: 2.5vw !important; }
-  #noticias {
+  .main_index #noticias_twitter {
     display: none; }
-  #texto-infotmativo {
+  .main_index #texto-infotmativo {
     margin-left: 10% !important; }
-    #texto-infotmativo .primer_bloque, .main_index .contenido #texto-infotmativo .segundo_bloque, .main_index .contenido #texto-infotmativo .tercer_bloque {
+    .main_index #texto-infotmativo .primer_bloque, .main_index .contenido #texto-infotmativo .segundo_bloque, .main_index .contenido #texto-infotmativo .tercer_bloque {
       font-size: 3vw !important; }
-  .carousel-inner img {
-    height: 320px !important; } }
+  .main_index .carousel-inner img {
+    height: 450px !important; }
+  .main_index .instagram {
+    display: none; } }
+
+@media screen and (max-width: 759px) {
+  .main_index .carousel-inner img {
+    height: 300px !important; } }
