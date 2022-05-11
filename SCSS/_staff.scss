@@ -8,16 +8,18 @@
 
   h1 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bold;
     text-shadow: $shadow;
   }
 
   #descripcion {
     margin-top: 20px;
+    font-size: 2vh;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
-    text-shadow: $shadow;
+    text-shadow: $shadow;      
   }
 
   .container {
@@ -30,23 +32,19 @@
     background-color: rgba(255, 255, 255, 0.963);
     border: 1px solid #fafbfb;
     border-radius: 0.25rem;
-  }
+   }
   
   /* APLICO MIXIN */
   #mapa {
-    @include boxSizes(800px, 300px);
+    @include boxSizes(400px, 300px);
     margin-top: 25px;
   }
   
+  /* MEDIA QUERIES */
   @media screen and (max-width: 992px) {
-    
-    #mapa {
+      #mapa {
       @include boxSizes(auto !important, auto !important);
     }
-  }
-  
-  @media screen and (min-width: 992px) {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
+  }  
+
 }
