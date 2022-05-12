@@ -50,29 +50,59 @@
     <section class="audio_vivo">
       <!-- COMIENZO DE SECCION PRINCIPAL -->
       <h1>¡ESCUCHANOS EN VIVO! </h1>
-      <h1>TODOS LOS VIERNES 21 HS </h1>
+      <h3>TODOS LOS VIERNES 21 HS </h3>
 
       <!-- COMIENZO DE REPRODUCTOR WEB DE LA RADIO -->
-      <audio controls src="https://streaming2.locucionar.com/proxy/imaginaria?mp=/stream" type="audio/mpeg"></audio>
-      <img src="../images/logoRadio_vivo.png" alt="logo-error" id="imaginaria">
-      <!-- FIN DE REPRODUCTOR WEB DE LA RADIO -->
+      <div class="container_reproductor">
+        <p id="texto_info">¡Dale play en nuestro día y horario de programa!</p>
+        <p id="texto_info">No te pierdas todas las novedades que día a día
+          acontecen en el Club Atlético Independiente
+        </p>
+        <audio controls src="https://streaming2.locucionar.com/proxy/imaginaria?mp=/stream" type="audio/mpeg"></audio>
+
+      </div>
     </section>
+    <!-- FIN DE REPRODUCTOR WEB DE LA RADIO -->
 
     <!-- COMIENZO DE ENLACES A VIDEO EN VIVO -->
     <section class="vivo_video">
-      <h2>¡TAMBIÉN PODER VERNOS EN VIVO!</h2>
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <a href="https://www.twitch.tv/fmimaginaria" target="_blank">
-          <button class="btn btn-primary" class="vivo_twitch" type="button">
-            <p class="vivo_twitch"> TWITCH </p>
-          </button>
-        </a>
-        <a href="https://www.imaginariafm.com.ar" target="_blank">
-          <button class="btn btn-primary" class="vivo_web" type="button">
-            <p class="vivo_web"> WEB IMAGINARIA</p>
-          </button>
-        </a>
-      </div>
+      <h1>¡TAMBIÉN PODER VERNOS EN VIVO!</h1>
+      <section class="cards_vivo">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="../images/twitch_enVivo.png" alt="Card image cap">
+          <div class=" vivo_twitch card-body">
+            <h5 class="card-title">VIVO DESDE TWITCH</h5>
+            <p class="card-text">Desde acá podras ver nuestro porgrama en vivo desde el canal de Twitch 
+              de la radio en FHD
+            </p>
+            <a href="https://www.twitch.tv/fmimaginaria" class="btn btn-primary">TWITCH</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">          
+          <img class="card-img-top" src="../images/logoRadio_vivo.png" alt="Card image cap">
+          <div class="vivo_web card-body">
+            <h5 class="card-title">VIVO DESDE WEB 95.3</h5>
+            <p  class="card-text">Desde acá podras ver nuestro porgrama en vivo desde la página web
+              de FM IMAGINARIA 95.3
+            </p>
+            <a href="https://www.imaginariafm.com.ar"  class= "btn btn-primary">IMAGINARIA WEB</a>
+          </div>
+        </div>
+      </section>
+      <!-- <a href="https://www.twitch.tv/fmimaginaria" target="_blank">
+        <button type="button" class="btn btn-secondary btn-lg">
+          <p class="vivo_twitch"> TWITCH </p>
+          <img src="../images/twitch_enVivo.png" alt="logoTWC-error" id="foto_vivo">
+        </button>
+      </a>
+
+      <a href="https://www.imaginariafm.com.ar" target="_blank">
+        <button type="button" class="btn btn-secondary btn-lg">
+          <p class="vivo_web"> WEB IMAGINARIA</p>
+          <img src="../images/logoRadio_vivo.png" alt="logoIMG-error" id="foto_vivo">
+        </button>
+      </a> -->
     </section>
     <!-- FIN DE ENLACES A VIDEO EN VIVO -->
 
