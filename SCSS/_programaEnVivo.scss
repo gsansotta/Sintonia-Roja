@@ -1,23 +1,27 @@
-/* APLICO MAPS */
+/* APLICO MAPS y MIXIN */
 
 $vivo: (
   twitch: #6441A5,
   web: rgb(62, 53, 53),
 );
 
-.vivo {
-  
-  .audio_vivo {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;  
-    margin-top: 15px;    
+@mixin centrarEnCaja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    #texto_info{
+.vivo {
+
+  .audio_vivo {  
+    @include centrarEnCaja();  
+    flex-direction: column;  
+    margin-top: 15px;
+
+    #texto_info {
       text-shadow: $shadow;
     }
-    
+
     h1 {
       margin-top: 30px;
       font-family: Arial, Helvetica, sans-serif;
@@ -30,12 +34,12 @@ $vivo: (
       margin-top: 10px;
     }
 
-   .container_reproductor {
-     @extend .audio_vivo;
-     width: 100%;
-     background: rgba(56, 56, 56, 0.418);
-     margin-bottom: 50px;
-     
+    .container_reproductor {
+      @extend .audio_vivo;
+      width: 100%;
+      background: rgba(56, 56, 56, 0.418);
+      margin-bottom: 50px;
+
 
       audio {
         margin-top: 20px;
@@ -48,80 +52,49 @@ $vivo: (
       #imaginaria {
         margin-top: 40px;
         margin-bottom: 30px;
-        max-width: 200px;        
+        max-width: 200px;
       }
-   } 
+    }
 
   }
 
   .vivo_video {
-    text-decoration: none; 
-    
-    #titulo_vivoVideo{
-      @extend h1;
+    text-decoration: none;
+
+    #titulo_vivoVideo{      
+      text-shadow: $shadow;
     }
 
-    .cards_vivo{
-      display: flex; 
-      flex-direction: row; 
-      align-items: center; 
-      justify-content: center;
-      .btn{
-        border: none;
-        background: rgba(0, 0, 0, 0.587);
-        &:hover{
-          color: rgb(150, 110, 110);
-        }
-      } 
-      @each $red,      
-      $color in $vivo {
-        .vivo_#{$red} {
-          background: $color;
-        }
-      }
+    .cards_vivo {
+      @include centrarEnCaja();
+      margin-top: 3rem;
+    
+      
       @media screen and (max-width: 759px) {
         flex-direction: column;
       }
-      .card{
+
+      .card {
         margin-left: 1rem;
         margin-right: 1rem;
-        margin-bottom: 2rem;        
-
-      }   
-
-    }
-
-    button {
-      /* background: rgba(134, 131, 131, 0.408);
-      border-color: aliceblue;
-      border-radius: 2rem;
-      text-decoration: none; */
-      margin-bottom: 15px;
-
-      &:hover {
-        background: rgb(213, 209, 209);
-      }
-
-      @each $red,
-      $color in $vivo {
-        .vivo_#{$red} {
-          color: $color;
+        margin-bottom: 2rem;
+        
+        @each $red,
+        $color in $vivo {
+          .vivo_#{$red} {
+            background: $color;
+          }
         }
       }
+      .btn {
+        border: none;
+        background: rgba(0, 0, 0, 0.587);
 
-      p {
-        /* margin-top: 15px; */
-        /* font-size: 2.5vh; */
-        font-style: bold;
-        text-decoration: none;
-      }
-      #foto_vivo{
-        margin-top: 40px;
-        margin-bottom: 30px;
-        max-width: 200px; 
+        &:hover {
+          color: rgb(150, 110, 110);
+          transform: scale(1.1) translateY(1px);
+        }         
       }
     }
-    
   }
-
 }

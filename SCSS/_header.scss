@@ -2,16 +2,16 @@
 
 header {
   background: $headercolor;
-  
+
   #img-header {
     width: 100%;
   }
 
-  #sr-logo {    
+  #sr-logo {
     width: 200px;
     margin-left: 40px;
   }
-  
+
 
   /* COMIENZO DE BARRA INFORMATIVA DEL HEADER EN INDEX */
   .informacion {
@@ -20,9 +20,13 @@ header {
     h1 {
       text-shadow: $shadow;
       padding-top: 8px;
-      padding-bottom: 8px;     
+      padding-bottom: 8px;
       margin-bottom: 0;
-      font-size: 2vh;   
+      font-size: 2vh;
+
+      @media screen and (max-width: 618px) {
+        font-size: 1.2vh;
+      }
     }
   }
 
@@ -42,7 +46,7 @@ header {
   }
 
   @media screen and (min-width: 992px) {
-    #sr-logo{
+    #sr-logo {
       display: none;
     }
   }
