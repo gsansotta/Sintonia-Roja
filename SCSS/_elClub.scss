@@ -19,7 +19,7 @@
         text-shadow: $shadow;
     }
 
-    #contenedores_links {
+    .contenedores_links {
         margin-top: 30px;
         margin-bottom: 60px;
         margin-right: 0;
@@ -36,17 +36,8 @@
             #link {
                 margin-top: 1px;
                 text-decoration: none;
-                color: $fontscolor;
-
-                h4 {
-                    text-align: center;
-                }
-
-                p {
-                    text-align: center
-                }
+                color: $fontscolor;                
             }
         }
     }
-
 }

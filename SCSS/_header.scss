@@ -8,8 +8,12 @@ header {
   }
 
   #sr-logo {
-    width: 200px;
+    width: 150px;
     margin-left: 40px;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
   }
 
 
@@ -44,12 +48,5 @@ header {
     }
 
   }
-
-  @media screen and (min-width: 992px) {
-    #sr-logo {
-      display: none;
-    }
-  }
-
 
 }

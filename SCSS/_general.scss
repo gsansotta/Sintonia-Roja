@@ -20,29 +20,3 @@ body {
 .disclaimer{
   display: none;
 }
-
-/* ANIMACIONES */
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes left-in-fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.contenedor {
-  margin-top: 2px;
-}
