@@ -54,7 +54,6 @@
 
       @media screen and (max-width: 1100px) {
         flex-direction: column;
-
       }
 
       .card {
@@ -65,19 +64,17 @@
         .card-body {
           background: rgb(62, 53, 53),
         }
-        .btn:hover{
+
+        .btn:hover {
           transform: scale(1.1) translateY(1px);
         }
       }
-
     }
 
     /* APLICO EXTEND */
     .cards_segundaSeccion {
       @extend .cards_primerSeccion;
     }
-
-
   }
 
   /* APLICO MIXIN */
@@ -93,5 +90,4 @@
       @include boxSizes(auto !important, auto !important);
     }
   }
-
 }
