@@ -31,21 +31,25 @@ header {
         display: none; } }
   header .informacion {
     background: linear-gradient(90deg, #050101 15%, #bd1010 50%, #050101 85%); }
-    header .informacion h1, header .informacion .staff .descripcion h5, .staff .descripcion header .informacion h5, header .informacion .vivo .audio_vivo h3, .vivo .audio_vivo header .informacion h3 {
+    header .informacion h1, header .informacion .staff .descripcion h2, .staff .descripcion header .informacion h2, header .informacion .vivo .audio_vivo h2, .vivo .audio_vivo header .informacion h2 {
       text-shadow: black 0.1em 0.1em 0.2em;
       padding-top: 8px;
       padding-bottom: 8px;
       margin-bottom: 0;
       font-size: 2vh; }
       @media screen and (max-width: 618px) {
-        header .informacion h1, header .informacion .staff .descripcion h5, .staff .descripcion header .informacion h5, header .informacion .vivo .audio_vivo h3, .vivo .audio_vivo header .informacion h3 {
+        header .informacion h1, header .informacion .staff .descripcion h2, .staff .descripcion header .informacion h2, header .informacion .vivo .audio_vivo h2, .vivo .audio_vivo header .informacion h2 {
           font-size: 1.2vh; } }
-  header #bonotes_menu {
+  header .navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0) !important; }
+    header .navbar-light .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke=' white ' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+  header .navbar-light #bonotes_menu {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     color: aliceblue;
     font-size: 20px; }
-    header #bonotes_menu:hover {
+    header .navbar-light #bonotes_menu:hover {
       background-color: rgba(255, 255, 255, 0.354);
       transform: scale(1.1) translateY(1px); }
 
@@ -69,11 +73,10 @@ footer {
   text-align: center;
   /* APLICO MIXIN */
   /* MEDIA QUERIES */ }
-  .staff h1, .staff .descripcion h5, .staff .vivo .audio_vivo h3, .vivo .audio_vivo .staff h3 {
+  .staff h1, .staff .descripcion h2, .staff .vivo .audio_vivo h2, .vivo .audio_vivo .staff h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-weight: bold;
     text-shadow: black 0.1em 0.1em 0.2em; }
   .staff .descripcion {
     padding-top: 1px;
@@ -140,17 +143,20 @@ footer {
   margin-top: 15px; }
   .vivo .audio_vivo #texto_info {
     text-shadow: black 0.1em 0.1em 0.2em; }
-  .vivo .audio_vivo h1, .vivo .audio_vivo .container_reproductor h1, .vivo .audio_vivo .staff .descripcion h5, .staff .descripcion .vivo .audio_vivo h5, .vivo .audio_vivo h3, .vivo .audio_vivo .container_reproductor h3 {
+  .vivo .audio_vivo h1, .vivo .audio_vivo .container_reproductor h1, .vivo .audio_vivo h2, .vivo .audio_vivo .container_reproductor h2 {
     margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 40px;
     text-shadow: black 0.1em 0.1em 0.2em; }
-  .vivo .audio_vivo h3, .vivo .audio_vivo .container_reproductor h3 {
-    margin-top: 10px; }
+  .vivo .audio_vivo h2, .vivo .audio_vivo .container_reproductor h2 {
+    margin-top: 15px; }
   .vivo .audio_vivo .container_reproductor {
     width: 100%;
     background: rgba(56, 56, 56, 0.418);
     margin-bottom: 50px; }
+    .vivo .audio_vivo .container_reproductor #texto_info {
+      font-size: 20px;
+      margin-top: 20px; }
     .vivo .audio_vivo .container_reproductor audio {
       margin-top: 20px;
       min-width: 250px;
@@ -221,7 +227,7 @@ footer {
 
 .main_index .contenedor {
   display: flex;
-  margin-top: 2rem; }
+  margin-top: 1rem; }
   .main_index .contenedor .texto-infotmativo {
     margin-left: 15%;
     margin-top: 2rem;
@@ -238,14 +244,18 @@ footer {
       color: aliceblue;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
-      margin-top: 3rem;
+      margin-top: 1rem;
       line-height: 1.5;
       font-size: 2vw;
       text-shadow: black 0.1em 0.1em 0.2em;
       animation-name: left-in-fade;
       animation-duration: 2s; }
+      .main_index .contenedor .texto-infotmativo .primer_bloque h1, .main_index .contenedor .texto-infotmativo .segundo_bloque h1, .main_index .contenedor .texto-infotmativo .tercer_bloque h1, .main_index .contenedor .texto-infotmativo .primer_bloque .staff .descripcion h2, .staff .descripcion .main_index .contenedor .texto-infotmativo .primer_bloque h2, .main_index .contenedor .texto-infotmativo .segundo_bloque .staff .descripcion h2, .staff .descripcion .main_index .contenedor .texto-infotmativo .segundo_bloque h2, .main_index .contenedor .texto-infotmativo .tercer_bloque .staff .descripcion h2, .staff .descripcion .main_index .contenedor .texto-infotmativo .tercer_bloque h2, .main_index .contenedor .texto-infotmativo .primer_bloque .vivo .audio_vivo h2, .vivo .audio_vivo .main_index .contenedor .texto-infotmativo .primer_bloque h2, .main_index .contenedor .texto-infotmativo .segundo_bloque .vivo .audio_vivo h2, .vivo .audio_vivo .main_index .contenedor .texto-infotmativo .segundo_bloque h2, .main_index .contenedor .texto-infotmativo .tercer_bloque .vivo .audio_vivo h2, .vivo .audio_vivo .main_index .contenedor .texto-infotmativo .tercer_bloque h2 {
+        margin-bottom: 3rem; }
     .main_index .contenedor .texto-infotmativo .segundo_bloque {
-      font-size: 1.6vw; }
+      font-size: 1.5vw;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
     .main_index .contenedor .texto-infotmativo .tercer_bloque {
       font-size: 1.8vw; }
     .main_index .contenedor .texto-infotmativo #escudo_index {
