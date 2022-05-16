@@ -18,8 +18,7 @@
   h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-weight: bold;
+    margin-bottom: 3rem;    
     text-shadow: $shadow;
   }
 
@@ -29,7 +28,7 @@
     background: rgba(56, 56, 56, 0.418);
 
     /* APLICO EXTEND */
-    h5 {
+    h2 {
       @extend h1;
     }
 

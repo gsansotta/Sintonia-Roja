@@ -29,9 +29,9 @@ $vivo: (
       text-shadow: $shadow;
     }
 
-    h3 {
+    h2 {
       @extend h1;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .container_reproductor {
@@ -40,6 +40,10 @@ $vivo: (
       background: rgba(56, 56, 56, 0.418);
       margin-bottom: 50px;
 
+      #texto_info{        
+        font-size: 20px;
+        margin-top: 20px;
+      }
 
       audio {
         margin-top: 20px;
@@ -55,7 +59,6 @@ $vivo: (
         max-width: 200px;
       }
     }
-
   }
 
   .vivo_video {

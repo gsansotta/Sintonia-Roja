@@ -2,7 +2,7 @@
 
   .contenedor {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     .texto-infotmativo {
       margin-left: 15%;
@@ -14,29 +14,37 @@
         0% {
           opacity: 0;
         }
+
         50% {
           opacity: 0.8;
         }
+
         100% {
           opacity: 1;
         }
-      }      
+      }
 
       .primer_bloque {
         color: $fontscolor;
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
-        margin-top: 3rem;
+        margin-top: 1rem;
         line-height: 1.5;
         font-size: 2vw;
         text-shadow: $shadow;
         animation-name: left-in-fade;
         animation-duration: 2s;
+        h1 {
+          margin-bottom: 3rem;
+        }
+
       }
 
       .segundo_bloque {
         @extend .primer_bloque;
-        font-size: 1.6vw;
+        font-size: 1.5vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
 
       .tercer_bloque {
@@ -54,6 +62,7 @@
       from {
         transform: translateX(-100%);
       }
+
       to {
         transform: translateX(0%);
       }
@@ -147,7 +156,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {   
+  @media screen and (max-width: 992px) {
 
     #noticias_twitter {
       display: none;
